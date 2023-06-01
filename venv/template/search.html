@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Books</title>
+</head>
+<body>
+    <h2>Search Books</h2>
+    <form method="POST" action="/search">
+        <label for="book_title">Book Title:</label>
+        <input type="text" id="book_title" name="book_title" required><br><br>
+        
+        <input type="submit" value="Search">
+    </form>
+    <br>
+    <p>{{ message }}</p>
+</body>
+</html>

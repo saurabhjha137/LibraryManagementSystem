@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body>
+    <h1>Welcome to the Library Management System</h1>
+    
+    {% if session.logged_in %}
+        <p>Welcome, {{ session.username }}!</p>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <p>Please login to access the system</p>
+        <a href="/login">Login</a>
+    {% endif %}
+</body>
+</html>

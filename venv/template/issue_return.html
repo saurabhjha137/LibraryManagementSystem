@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Issue/Return Books</title>
+</head>
+<body>
+    <h2>Issue/Return Books</h2>
+    <h3>Issue Book</h3>
+    <form method="POST" action="/issue_book">
+        <label for="book_title">Book Title:</label>
+        <input type="text" id="book_title" name="book_title" required><br><br>
+        
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+        
+        <input type="submit" value="Issue Book">
+    </form>
+    
+    <h3>Return Book</h3>
+    <form method="POST" action="/return_book">
+        <label for="book_title">Book Title:</label>
+        <input type="text" id="book_title" name="book_title" required><br><br>
+        
+        <input type="submit" value="Return Book">
+    </form>
+</body>
+</html>

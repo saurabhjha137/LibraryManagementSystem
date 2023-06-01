@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Books</title>
+</head>
+<body>
+    <h2>View Books</h2>
+    <table>
+        <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Availability</th>
+            <th>Issued To</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ "Available" if book.available else "Checked Out" }}</td>
+            <td>{{ book.issued_to if not book.available else "" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
